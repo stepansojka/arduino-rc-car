@@ -100,7 +100,7 @@ State onButtons(uint8_t buttonState) {
     digitalWrite(HORN_PIN, buttonState & HORN ? HIGH : LOW);
     lastState = buttonState;
   }
-  
+
   return COMMAND;
 }
 
@@ -110,7 +110,7 @@ void loop() {
 
     State state = COMMAND;
     uint8_t byte = static_cast<uint8_t>(Serial1.read());
-    
+
     switch (state) {
       case COMMAND:
         state = onCommand(byte);
