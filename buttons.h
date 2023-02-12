@@ -1,3 +1,4 @@
+#pragma once
 
 enum Buttons {
   FRONT_LIGHTS = 0x80,

@@ -1,3 +1,4 @@
+#pragma once
 
 enum Command {
   DRIVE_FORWARD = 0xf1,
